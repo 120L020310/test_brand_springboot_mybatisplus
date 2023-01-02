@@ -46,4 +46,8 @@ public class BrandController {
         String msg = brandList != null ? "" : "数据查询失败，请重试！";
         return new Result(code,brandList,msg);
     }
+    @GetMapping
+    public String send(){
+        return "send success!";
+    }
 }
