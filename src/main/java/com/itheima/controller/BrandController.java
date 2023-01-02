@@ -47,7 +47,11 @@ public class BrandController {
         return new Result(code,brandList,msg);
     }
     @GetMapping
-    public String receive(){
+    public String receive() {
         return "receive success!";
+    }
+    @GetMapping
+    public String send(){
+        return "send success!";
     }
 }
